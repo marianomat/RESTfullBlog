@@ -1,0 +1,34 @@
+<%- include ("partials/header.ejs") %>
+
+
+<div id="formulario" class="container">
+    <h1>
+	Añadir nuevo Blog
+   </h1>
+  <form action="/blogs" method="POST" >
+	  <div  class="form-group">
+		<label for="titulo">Titulo</label>
+		<input type="text" class="form-control" id="titulo" placeholder="Ingrese titulo" name="blog[titulo]">
+	  </div>
+	  <div class="form-group">
+		<label for="imagen">URL foto</label>
+		<input class="form-control" id="imagen" name="blog[imagen]"  placeholder="Ingrese URL" rows="3">
+	  </div>
+	  <div class="form-group">
+		<label for="cuerpo">Texto</label>
+		<textarea class="form-control" id="cuerpo" name="blog[cuerpo]" placeholder="Ingrese texto" rows="3"></textarea>
+	  </div>
+	  <button class="btn btn-dark" type="submit" >
+		  Agregar
+	  </button>
+   </form>
+</div>
+
+
+
+
+
+
+
+
+<%- include ("partials/footer.ejs") %>
