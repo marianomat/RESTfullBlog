@@ -4,7 +4,7 @@ const express = require("express"),
 	  methodOverride = require('method-override'),
 	  app = express()
 
-//CAMBIO MASTER
+//CAMBIO MASTER 2
 
 //app config
 mongoose.connect('mongodb://localhost:27017/blogs', {useNewUrlParser: true, useUnifiedTopology: true});
