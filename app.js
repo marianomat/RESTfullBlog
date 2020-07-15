@@ -4,6 +4,8 @@ const express = require("express"),
 	  methodOverride = require('method-override'),
 	  app = express()
 
+//V2
+
 //app config
 mongoose.connect('mongodb://localhost:27017/blogs', {useNewUrlParser: true, useUnifiedTopology: true});
 app.set("view engine", "ejs");
